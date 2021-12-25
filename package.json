@@ -1,0 +1,51 @@
+{
+  "name": "@townland-project/component",
+  "version": "0.0.1",
+  "description": "Townland component boilerplate",
+  "main": "public/bundle.js",
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack build --mode=production",
+    "cli": "ts-node bin/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "townland",
+    "component",
+    "boilerplate"
+  ],
+  "author": {
+    "name": "Townland",
+    "url": "https://townland.xyz",
+    "email": "mail@townland.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/townland-project/component.git"
+  },
+  "homepage": "https://project.townland.xyz/repo/component",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "css-loader": "^6.5.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
+  },
+  "dependencies": {
+    "@townland-project/app": "*",
+    "@townland-project/dom": "*",
+    "@townland-project/eventer": "*",
+    "@townland-project/gui": "*"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}

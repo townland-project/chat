@@ -1,0 +1,7 @@
+p {
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+
+    span {
+        font-weight: bold;
+    }
+}
