@@ -1,0 +1,21 @@
+<div class="tl-chat-user-info">
+    <strong>{{fullname}}</strong>
+    <span>{{username}}</span>
+</div>
+<div class="tl-chat-user-settings">
+    <div class="input-container">
+        <input id="tl-chat-user-{{username}}-both" class="tl-checkbox" type="checkbox" bind-change="ChangeBoth()"
+            {{both}}>
+        <label for="tl-chat-user-{{username}}-both">Both</label>
+    </div>
+    <div class="input-container">
+        <input id="tl-chat-user-{{username}}-send" class="tl-checkbox" type="checkbox" bind-change="ChangeSendable()"
+            {{sendable}}>
+        <label for="tl-chat-user-{{username}}-send">Send</label>
+    </div>
+    <div class="input-container">
+        <input id="tl-chat-user-{{username}}-receive" class="tl-checkbox" type="checkbox"
+            bind-change="ChangeReceivable()" {{receivable}}>
+        <label for="tl-chat-user-{{username}}-receive">Receive</label>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+tl-chat-footer {
+    display: block;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: var(--townland-chat-footer-height);
+
+        padding: 0 var(--townland-chat-footer-padding);
+
+        border-top: 1px solid var(--townland-chat-footer-border-color);
+
+        transition: all var(--townland-chat-animation-speed);
+
+        input {
+            background-color: transparent;
+
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                color: var(--townland-chat-footer-input-placeholder-color);
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { GenerateComponent } from './component'
 
 const
-    prefix = 'app',
+    prefix = 'tl-chat',
     args = process.argv
 
 if(args.length == 2) console.error("Need more arrangements.")

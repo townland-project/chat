@@ -1,0 +1,9 @@
+<main>
+    <div id="tl-chat-focus"></div>
+</main>
+<footer style="--left: 0; --width: 0px;">
+    <span tab="all" bind-click="SetTab(all)">All</span>
+    <span tab="both" bind-click="SetTab(both)">Both</span>
+    <span tab="sendable" bind-click="SetTab(sendable)">Sendable</span>
+    <span tab="receivable" bind-click="SetTab(receivable)">Receivable</span>
+</footer>

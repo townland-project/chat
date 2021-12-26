@@ -1,0 +1,3 @@
+<footer>
+    <input type="text" id="tl-chat-input" placeholder="Your message" bind-change="SendTextMessage()" />
+</footer>

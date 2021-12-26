@@ -1,7 +1,87 @@
-p {
-    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+tl-chat {
+    // index.ts
+    --townland-chat-animation-speed: 0.3s;
+    --townland-chat-border-radius: 14px;
+    --townland-chat-width: 300px;
+    --townland-chat-opened-height: 300px;
+    --townland-chat-border-width: 3px;
+    --townland-chat-border-color: #0be881;
+    --townland-chat-blur: 20px;
+    --townland-chat-background-color: rgba(255, 255, 255, 0.2);
+    --townland-chat-shadow-height: 8px;
+    --townland-chat-shadow-color: #05c46b;
+    --townland-chat-opened-shadow-color: rgba(0, 0, 0, 0.2);
+    // header.ts
+    --townland-chat-header-padding: 12px;
+    --townland-chat-header-height: 46px;
+    --townland-chat-header-background-color: #0be881;
+    --townland-chat-header-title-font-size: 12px;
+    --townland-chat-header-room-font-size: 12px;
+    --townland-chat-header-room-color: rgba(0, 0, 0, 0.7);
+    --townland-chat-header-button-size: 32px;
+    --townland-chat-header-button-icon-size: 24px;
+    --townland-chat-header-button-icon-fill: rgba(0, 0, 0, 0.8);
+    // footer.ts
+    --townland-chat-footer-border-color: rgba(0, 0, 0, 0.2);
+    --townland-chat-footer-height: 42px;
+    --townland-chat-footer-padding: 12px;
+    --townland-chat-footer-input-placeholder-color: #2f3640;
+    // message.ts
+    --townland-chat-message-margin: 2px;
+    --townland-chat-message-padding: 8px 14px;
+    --townland-chat-message-border-radius: 2em;
+    --townland-chat-message-background-color: #ffffff;
+    --townland-chat-message-font-size: 12px;
+    // focus.ts
+    --townland-chat-focus-background-color: #0be881;
+    --townland-chat-focus-footer-background-color: rgba(0, 0, 0, 0.1);
+    --townland-chat-focus-footer-margin: 5px;
+    --townland-chat-focus-footer-padding: 8px 5px;
+    --townland-chat-focus-footer-border-radius: 10px;
+    --townland-chat-focus-footer-font-size: 12px;
+    --townland-chat-focus-footer-mover-background-color: #fff;
+    // user.ts
+    --townland-chat-user-padding: 8px;
+    --townland-chat-user-border-radius: 12px;
+    --townland-chat-user-margin-v: 5px;
+    --townland-chat-user-margin-h: 5px;
+    --townland-chat-user-height: 33px;
+    --townland-chat-user-hover-height: 60px;
+    --townland-chat-user-background-color: #ffffff;
+    --townland-chat-user-shadow-color: rgba(255, 255, 255, 0.7);
+    --townland-chat-user-fullname-font-size: 14px;
+    --townland-chat-user-fullname-color: #000000;
+    --townland-chat-user-username-font-size: 12px;
+    --townland-chat-user-username-color: rgba(0, 0, 0, 0.7);
+    --townland-chat-user-input-margin-top: 10px;
 
-    span {
-        font-weight: bold;
+    &:not([opened]) {
+        --townland-chat-footer-border-color: transparent;
     }
+
+    position: fixed;
+    
+    div#tl-chat {
+        width: var(--townland-chat-width);
+        height: var(--townland-chat-footer-height);
+    
+        border: var(--townland-chat-border-width) solid var(--townland-chat-border-color);
+        border-radius: var(--townland-chat-border-radius);
+    
+        background-color: var(--townland-chat-background-color);
+    
+        backdrop-filter: blur(var(--townland-chat-blur));
+    
+        box-shadow: 0 -20px var(--townland-chat-header-background-color),
+            0 var(--townland-chat-shadow-height) var(--townland-chat-shadow-color),
+            0 0 8px var(--townland-chat-opened-shadow-color);
+    
+        transition: all var(--townland-chat-animation-speed);
+    
+        overflow: hidden;
+    }
+    
+    &[opened] div#tl-chat {
+        height: var(--townland-chat-opened-height);
+    }    
 }

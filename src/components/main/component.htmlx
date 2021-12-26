@@ -1,1 +1,6 @@
-<p><span>main</span> component is working!</p>
+<tl-chat-header></tl-chat-header>
+<div id="tl-chat">
+    <tl-chat-focus></tl-chat-focus>
+    <tl-chat-messages></tl-chat-messages>
+    <tl-chat-footer></tl-chat-footer>
+</div>

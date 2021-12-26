@@ -1,7 +1,7 @@
 {
-  "name": "@townland-project/component",
+  "name": "@townland-project/chat",
   "version": "0.0.1",
-  "description": "Townland component boilerplate",
+  "description": "Chat room in town",
   "main": "public/bundle.js",
   "scripts": {
     "serve": "webpack serve",
@@ -11,8 +11,7 @@
   },
   "keywords": [
     "townland",
-    "component",
-    "boilerplate"
+    "component"
   ],
   "author": {
     "name": "Townland",
@@ -21,9 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/townland-project/component.git"
+    "url": "https://github.com/townland-project/chat.git"
   },
-  "homepage": "https://project.townland.xyz/repo/component",
+  "homepage": "https://project.townland.xyz/repo/chat",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^17.0.4",
@@ -41,9 +40,10 @@
   },
   "dependencies": {
     "@townland-project/app": "*",
-    "@townland-project/dom": "*",
+    "@townland-project/dom": "^0.0.8",
     "@townland-project/eventer": "*",
-    "@townland-project/gui": "*"
+    "@townland-project/gui": "*",
+    "simplebar": "^5.3.6"
   },
   "browserslist": [
     "last 1 Chrome versions"
